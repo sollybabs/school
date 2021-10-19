@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Back to school 2021</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+        <a class="logo" href="#">Back2<span>SCHOOL</span></a>
+
+        
+        <img id="mobile-cta" class= "mobile-menu"src="https://img.icons8.com/material-sharp/24/000000/menu--v1.png" alt="Open Navigation"/>
+
+        <nav>
+            
+            <img id="mobile-exit" class="mobile-menu-exit"src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png"alt="Close Navigation"/>
+            
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li ><a href="#">Contact</a></li>
+                <li><a href="#">Go-Premium</a></li>
+                <li class="go-premium-cta"><a href="#">Service</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+    </div>
+
+   <section>
+       <div class="container">
+           <div class="left-col">
+               <p class="subhead">It's education &amp; power</p>
+               <hi>Get Good Quality Education Today and Position Yourself For Leadership Tomorrow</hi>
+           </div>
+       </div>
+          <div class="hero-cta">
+              <a href="#" class="primary-cta">Try for free</a>
+              <a href="#" class="watch-video-cta">
+                  <img src="https://img.icons8.com/material-sharp/
+                  24/000000/video-call--v1.png" alt="watch video"/>Watch video
+                </a>
+          </div>
+          <img src="images/teacher-image.png" alt="A teacher"> 
+          
+   </section>
+
+       <section class="feature-list">
+           <div class="container">
+               <ul>
+                   <li class="feature__list--item"> Tutorial and registration of WASSCE,NECO,UTME, POST UTME.</li>
+                    <li class="feature__list--item">Tutorial and registration for GCE A-LEVEL,JUBEB, and IJMB.</li> 
+                   <li class="feature__list--item">Coding Bootcamp for the pupils of your School</li>
+                   <li class="feature__list--item">Adult Literacy</li>                 
+                   <li class="feature__list--item">Tutorial and registration for Applicant into School of Nursing and College of Health.</li>
+                   <li class="feature__list--item">Tutorial Class for Private Candidate in your House or your Choice Location.</li>
+                   <li class="feature__list--item">Supply for textbook,stationeries and other writing materials.</li>
+                   <li class="feature__list--item">Provision and supply of items used in the school,such as chairs,table,and others. etc.</li>
+               </ul>
+
+               
+
+           </div>
+           
+          <img class="feature-section-img" src="images/teacher.webp" alt="A teacher">
+            
+       </section>
+
+       <section class="testimonials-section">
+           <div class="container">
+               <ul>
+                   <li><img src="images/teacher-image.jpg" alt="smart-teacher">
+                     <blockquote>Teachers have three loves: love of learning, love of learners, 
+                        and the love of bringing the first two loves together. Education is our 
+                        passport to the future, for tomorrow belongs to the people who prepare 
+                        for it today. I am not a teacher, but an awakener. The art of teaching is 
+                        the art of assisting discovery.
+                     </blockquote>
+                     <cite> -Jane Doe</cite>
+                    </li>
+
+                      <li><img src="images/mandela.JPG" alt="smart-teacher">
+                          <blockquote> Education is the most powerful weapon which you can use to 
+                            change the world. 
+                            Teachers have three loves: love of learning, love of learners, 
+                            and the love of bringing the first two loves together. Education is our 
+                            passport to the future, for tomorrow belongs to the people who prepare 
+                            for it today. I am not a teacher, but an awakener. The art of teaching is 
+                            the art of assisting discovery.
+                         </blockquote>
+                         <cite> -Nelson Mandela</cite>
+                        </li>
+
+                        <li><img src="images/Einstein.JPG" alt="smart-teacher">
+                            <blockquote> Education is not the learning of facts ,but the training of the mind to think.
+                                Teachers have three loves: love of learning, love of learners, 
+                              and the love of bringing the first two loves together. Education is our 
+                              passport to the future, for tomorrow belongs to the people who prepare 
+                              for it today. I am not a teacher, but an awakener. The art of teaching is 
+                              the art of assisting discovery.
+                           </blockquote>
+                           <cite> -Albert Einstein</cite>
+                          </li>
+
+      
+                   
+               </ul>
+           </div>
+       </section>
+
+       <section class="contact-section">
+           <div class="container">
+               <div class="contact-left">
+                   <h2>Contact</h2>
+
+                   <form action="">
+                       <label for="name">Name</label>
+                       <input type="text" id="name" name="name"><br>
+                       <label for="email">Email</label>
+                       <input type="email" id="Email" name="email"><br>
+                       <label for="message">Message</label>
+                       <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                       <input type="submit" id= "send-message-cta" value = "Submit">                  </form>
+                </div>
+                 <div class="contact-right">
+                     <iframe src="https://goo.gl/maps/oCbcf4ymEedrnY97A" frameborder="0"></iframe>
+                 </div>
+
+           </div>
+       </section>
+
+       <div class="foot"><em>Back2SCHOOL &copy 2021</em></div>
+             
+    
+    
+<script> 
+      const mobileBtn = document.getElementsById("mobile-cta");
+        nav=document.querySelector('nav')
+        mobileBtnExit=document.getElementById('mobile-exit');
+       mobileBtn.addEventListener("click", () => {
+        nav.classList.add('menu-btn');
+      });
+ 
+      mobileBtnExit.addEventListener("click", () => {
+      nav.classList.remove("menu-btn-exit");
+      });
+</script>
+</body>
+</html>

@@ -1,15 +1,13 @@
 //////////////////// Hamburger Menu
 
 
-const mobileBtn = document.getElementsById("mobile-cta")
-        nav=document.querySelector('nav');
-     mobileBtnExit=document.getElementById('mobile-exit');
- mobileBtn.addEventListener("click", () => {
-    nav.classList.add('menu-btn');
- });
-
- mobileBtnExit.addEventListener("click", () => {
-  nav.classList.remove("menu-btn-exit");
- });
+function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+ }
 
 
